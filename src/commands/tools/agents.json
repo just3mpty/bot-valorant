@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Astra",
+        "image": "./src/assets/agents/astra.png"
+    },
+    {
+        "name": "Breach",
+        "image": "./src/assets/agents/breach.png"
+    },
+    {
+        "name": "Brimstone",
+        "image": "./src/assets/agents/brimstone.png"
+    },
+    {
+        "name": "Chamber",
+        "image": "./src/assets/agents/chamber.png"
+    },
+    {
+        "name": "Clove",
+        "image": "./src/assets/agents/clove.png"
+    },
+    {
+        "name": "Cypher",
+        "image": "./src/assets/agents/cypher.png"
+    },
+    {
+        "name": "Deadlock",
+        "image": "./src/assets/agents/deadlock.png"
+    },
+    {
+        "name": "Fade",
+        "image": "./src/assets/agents/fade.png"
+    },
+    {
+        "name": "Harbor",
+        "image": "./src/assets/agents/harbor.png"
+    },
+    {
+        "name": "Iso",
+        "image": "./src/assets/agents/iso.png"
+    },
+    {
+        "name": "KAY/O",
+        "image": "./src/assets/agents/kayo.png"
+    },
+    {
+        "name": "Killjoy",
+        "image": "./src/assets/agents/killjoy.png"
+    },
+    {
+        "name": "Neon",
+        "image": "./src/assets/agents/neon.png"
+    },
+    {
+        "name": "Omen",
+        "image": "./src/assets/agents/omen.png"
+    },
+    {
+        "name": "Phoenix",
+        "image": "./src/assets/agents/phoenix.png"
+    },
+    {
+        "name": "Raze",
+        "image": "./src/assets/agents/raze.png"
+    },
+    {
+        "name": "Reyna",
+        "image": "./src/assets/agents/reyna.png"
+    },
+    {
+        "name": "Sage",
+        "image": "./src/assets/agents/sage.png"
+    },
+    {
+        "name": "Skye",
+        "image": "./src/assets/agents/skye.png"
+    },
+    {
+        "name": "Sova",
+        "image": "./src/assets/agents/sova.png"
+    },
+    {
+        "name": "Viper",
+        "image": "./src/assets/agents/viper.png"
+    },
+    {
+        "name": "Yoru",
+        "image": "./src/assets/agents/yoru.png"
+    }
+]

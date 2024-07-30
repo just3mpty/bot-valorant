@@ -7,8 +7,16 @@ const agentCommand: Command = {
         .setName("agent")
         .setDescription("Choisit un agent aléatoire de Valorant"),
     async execute(interaction: CommandInteraction) {
+        if (!interaction.isChatInputCommand()) {
+            return;
+        }
+
         try {
-            // Defer the reply to avoid potential long response times
+            if (interaction.replied || interaction.deferred) {
+                console.warn("Interaction already acknowledged.");
+                return;
+            }
+
             await interaction.deferReply();
 
             const randomAgent =
@@ -27,16 +35,29 @@ const agentCommand: Command = {
         } catch (error) {
             console.error("Erreur lors de la réponse à l'interaction :", error);
 
-            // Utiliser interaction.editReply si deferReply a été utilisé
             if (interaction.deferred || interaction.replied) {
-                await interaction.editReply({
-                    content: "Une erreur est survenue lors de la réponse.",
-                });
+                try {
+                    await interaction.editReply({
+                        content: "Une erreur est survenue lors de la réponse.",
+                    });
+                } catch (editError) {
+                    console.error(
+                        "Erreur lors de l'édition de la réponse :",
+                        editError
+                    );
+                }
             } else {
-                await interaction.reply({
-                    content: "Une erreur est survenue lors de la réponse.",
-                    ephemeral: true,
-                });
+                try {
+                    await interaction.reply({
+                        content: "Une erreur est survenue lors de la réponse.",
+                        ephemeral: true,
+                    });
+                } catch (replyError) {
+                    console.error(
+                        "Erreur lors de la réponse à l'interaction :",
+                        replyError
+                    );
+                }
             }
         }
     },

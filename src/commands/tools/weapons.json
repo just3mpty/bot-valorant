@@ -1,7 +1,97 @@
 [
     {
         "name": "Classic",
-        "image": "./assets/weapons/classic.png",
-        "price": 0
+        "price": 0,
+        "image": "./src/assets/weapons/classic.png"
+    },
+    {
+        "name": "Knife",
+        "price": 0,
+        "image": "./src/assets/weapons/cut.png"
+    },
+    {
+        "name": "Shorty",
+        "price": 150,
+        "image": "./src/assets/weapons/shorty.png"
+    },
+    {
+        "name": "Frenzy",
+        "price": 450,
+        "image": "./src/assets/weapons/frenzy.png"
+    },
+    {
+        "name": "Ghost",
+        "price": 500,
+        "image": "./src/assets/weapons/ghost.png"
+    },
+    {
+        "name": "Sheriff",
+        "price": 800,
+        "image": "./src/assets/weapons/sheriff.png"
+    },
+    {
+        "name": "Stinger",
+        "price": 950,
+        "image": "./src/assets/weapons/stinger.png"
+    },
+    {
+        "name": "Spectre",
+        "price": 1600,
+        "image": "./src/assets/weapons/spectre.png"
+    },
+    {
+        "name": "Bucky",
+        "price": 850,
+        "image": "./src/assets/weapons/bucky.png"
+    },
+    {
+        "name": "Judge",
+        "price": 1850,
+        "image": "./src/assets/weapons/judge.png"
+    },
+    {
+        "name": "Bulldog",
+        "price": 2050,
+        "image": "./src/assets/weapons/bulldog.png"
+    },
+    {
+        "name": "Guardian",
+        "price": 2250,
+        "image": "./src/assets/weapons/guardian.png"
+    },
+    {
+        "name": "Phantom",
+        "price": 2900,
+        "image": "./src/assets/weapons/phantom.png"
+    },
+    {
+        "name": "Vandal",
+        "price": 2900,
+        "image": "./src/assets/weapons/vandal.png"
+    },
+    {
+        "name": "Marshal",
+        "price": 950,
+        "image": "./src/assets/weapons/marshall.png"
+    },
+    {
+        "name": "Operator",
+        "price": 4700,
+        "image": "./src/assets/weapons/operator.png"
+    },
+    {
+        "name": "Ares",
+        "price": 1600,
+        "image": "./src/assets/weapons/ares.png"
+    },
+    {
+        "name": "Odin",
+        "price": 3200,
+        "image": "./src/assets/weapons/odin.png"
+    },
+    {
+        "name": "Outlaw",
+        "price": 2400,
+        "image": "./src/assets/weapons/outlaw.png"
     }
 ]

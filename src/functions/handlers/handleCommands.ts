@@ -60,11 +60,6 @@ module.exports = (client: {
         }
 
         try {
-            // Supprime toutes les commandes avant de les recharger
-            await rest.put(
-                Routes.applicationGuildCommands(CLIENT_ID!, GUILD_ID!),
-                { body: [] }
-            );
             // Recharge les commandes
             await rest.put(
                 Routes.applicationGuildCommands(CLIENT_ID!, GUILD_ID!),

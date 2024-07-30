@@ -1,0 +1,20 @@
+{
+    "name": "valobot",
+    "version": "1.0.0",
+    "description": "Random Valorant agent picker",
+    "main": "src/bot.ts",
+    "scripts": {
+        "start": "ts-node src/bot.ts"
+    },
+    "keywords": [
+        "valorant"
+    ],
+    "author": "3mpty",
+    "license": "ISC",
+    "dependencies": {
+        "discord.js": "^14.15.3",
+        "dotenv": "^16.4.5",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.5.4"
+    }
+}

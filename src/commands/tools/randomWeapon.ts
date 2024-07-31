@@ -7,7 +7,10 @@ const weaponCommand: Command = {
         .setName("weapon")
         .setDescription("Choisit une arme aléatoire de Valorant"),
     async execute(interaction: CommandInteraction) {
-        if (!interaction.isChatInputCommand()) return;
+        if (!interaction.isChatInputCommand()) {
+            return;
+        }
+
         try {
             await interaction.deferReply();
 
@@ -25,17 +28,29 @@ const weaponCommand: Command = {
                 );
             }
         } catch (error) {
-            console.error("Erreur lors de la réponse à l'interaction :", error);
-
             if (interaction.deferred || interaction.replied) {
-                await interaction.editReply({
-                    content: "Une erreur est survenue lors de la réponse.",
-                });
+                try {
+                    await interaction.editReply({
+                        content: "Une erreur est survenue lors de la réponse.",
+                    });
+                } catch (editError) {
+                    console.error(
+                        "Erreur lors de l'édition de la réponse :",
+                        editError
+                    );
+                }
             } else {
-                await interaction.reply({
-                    content: "Une erreur est survenue lors de la réponse.",
-                    ephemeral: true,
-                });
+                try {
+                    await interaction.reply({
+                        content: "Une erreur est survenue lors de la réponse.",
+                        ephemeral: true,
+                    });
+                } catch (replyError) {
+                    console.error(
+                        "Erreur lors de la réponse à l'interaction :",
+                        replyError
+                    );
+                }
             }
         }
     },

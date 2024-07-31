@@ -12,11 +12,6 @@ const agentCommand: Command = {
         }
 
         try {
-            if (interaction.replied || interaction.deferred) {
-                console.warn("Interaction already acknowledged.");
-                return;
-            }
-
             await interaction.deferReply();
 
             const randomAgent =
@@ -33,8 +28,6 @@ const agentCommand: Command = {
                 );
             }
         } catch (error) {
-            console.error("Erreur lors de la réponse à l'interaction :", error);
-
             if (interaction.deferred || interaction.replied) {
                 try {
                     await interaction.editReply({
